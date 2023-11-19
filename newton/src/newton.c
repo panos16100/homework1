@@ -27,7 +27,7 @@ int main(int argc,char**argv) {
     do {
       i++;
       result=fabs(x-xo);
-      if (i>1000){
+      if (i>999){
           printf("incomplete\n");
           }
        else if (result<pow(10,-6)) {
@@ -44,7 +44,7 @@ int main(int argc,char**argv) {
 
        }
     }
-    while ( result>=pow(10,-6) && i<=1000 && factorial_p(a1,a2,a3,a4,a5,xo)!=0 );
+    while ( result>=pow(10,-6) && i<1000 && factorial_p(a1,a2,a3,a4,a5,xo)!=0 );
     return 0;
     
     
