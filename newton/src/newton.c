@@ -2,6 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+
 double factorial(double a0,double a1,double a2,double a3,double a4,double a5,double xo) {
     return a0+a1*xo+a2*pow(xo,2)+a3*pow(xo,3)+a4*pow(xo,4)+a5*pow(xo,5);
     
@@ -27,7 +28,7 @@ int main(int argc,char**argv) {
     do {
       i++;
       result=fabs(x-xo);
-      if (i>999){
+      if (i>1000){
           printf("incomplete\n");
           }
        else if (result<pow(10,-6)) {
@@ -44,7 +45,7 @@ int main(int argc,char**argv) {
 
        }
     }
-    while ( result>=pow(10,-6) && i<1000 && factorial_p(a1,a2,a3,a4,a5,xo)!=0 );
+    while ( result>=pow(10,-6) && i<=1000 && factorial_p(a1,a2,a3,a4,a5,xo)!=0 );
     return 0;
     
     
