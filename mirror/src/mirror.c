@@ -64,7 +64,7 @@ int main(int argc,char**argv){
                 }
             }
         }
-        printf("sum= %llu\n",sum);
+        printf(" %llu\n",sum);
         return 0;
         
     }
